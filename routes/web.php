@@ -2,6 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\RoomDetailsController;
+use App\Http\Controllers\BlogDetailsController;
+use App\Http\Controllers\RegisterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +28,18 @@ use App\Http\Controllers\HomeController;
     return view('welcome');
 }); */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
-Route::get('/register', [App\Http\Controllers\HomeController::class, 'register']);
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'login']);
-Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about']);
-Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
-Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog']);
-Route::get('/blog-details', [App\Http\Controllers\HomeController::class, 'blogDetails']);
-Route::get('/rooms', [App\Http\Controllers\HomeController::class, 'rooms']);
-Route::get('/room-details', [App\Http\Controllers\HomeController::class, 'roomsDetails']);
+Route::get('/register', [LoginController::class, 'register'])->name('login.register');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/about', [AboutController::class, 'about'])->name('about');
+Route::get('/rooms', [RoomController::class, 'index'])->name('rooms');
+Route::get('/room-details', [RoomController::class, 'roomDetails'])->name('room-details');
+Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog-details', [BlogControllerr::class, 'blogDetails'])->name('blog-details');
+
+
+
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 

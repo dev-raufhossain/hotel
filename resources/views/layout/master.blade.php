@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('assets/css/slicknav.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" type="text/css">
+    @stack('styles')
 </head>
 
 <body>
@@ -50,28 +51,28 @@
                 <span>EN <i class="fa fa-angle-down"></i></span>
                 <div class="flag-dropdown">
                     <ul>
-                        <li><a href="{{asset('/')}}">Zi</a></li>
-                        <li><a href="{{asset('/')}}">Fr</a></li>
+                        <li><a href="{{route('index')}}">Zi</a></li>
+                        <li><a href="{{route('index')}}">Fr</a></li>
                     </ul>
                 </div>
             </div>
-            <a href="{{asset('/login')}}" class="bk-btn">Booking Now</a>
+            <a href="{{route('login')}}" class="bk-btn">Booking Now</a>
         </div>
         <nav class="mainmenu mobile-menu">
             <ul>
-                <li><a href="{{asset('/')}}">Home</a></li>
-                <li><a href="{{asset('/rooms')}}">Rooms</a></li>
-                <li><a href="{{asset('/blog')}}">News</a></li>
-                <li><a href="{{asset('/about-us')}}">About Us</a></li>
-                <li><a href="{{asset('/contact')}}">Contact</a></li>
+                <li><a href="{{route('index')}}">Home</a></li>
+                <li><a href="{{route('rooms')}}">Rooms</a></li>
+                <li><a href="{{route('blog')}}">News</a></li>
+                <li><a href="{{route('about')}}">About Us</a></li>
+                <li><a href="{{route('contact')}}">Contact</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="top-social">
-            <a href="{{asset('/')}}"><i class="fa fa-facebook"></i></a>
-            <a href="{{asset('/')}}"><i class="fa fa-twitter"></i></a>
-            <a href="{{asset('/')}}"><i class="fa fa-tripadvisor"></i></a>
-            <a href="{{asset('/')}}"><i class="fa fa-instagram"></i></a>
+            <a href="{{route('index')}}"><i class="fa fa-facebook"></i></a>
+            <a href="{{route('index')}}"><i class="fa fa-twitter"></i></a>
+            <a href="{{route('index')}}"><i class="fa fa-tripadvisor"></i></a>
+            <a href="{{route('index')}}"><i class="fa fa-instagram"></i></a>
         </div>
         <ul class="top-widget">
             <li><i class="fa fa-phone"></i> +88 01535 227285</li>
@@ -94,19 +95,19 @@
                     <div class="col-lg-6">
                         <div class="tn-right">
                             <div class="top-social">
-                                <a href="{{asset('/')}}"><i class="fa fa-facebook"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-twitter"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-instagram"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-facebook"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-twitter"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-instagram"></i></a>
                             </div>
-                            <a href="{{asset('/login')}}" class="bk-btn">Booking Now</a>
+                            <a href="{{route('login')}}"" class="bk-btn">Booking Now</a>
                             <div class="language-option">
                                 <img src="{{asset('assets/img/flag.jpg')}}" alt="">
                                 <span>EN <i class="fa fa-angle-down"></i></span>
                                 <div class="flag-dropdown">
                                     <ul>
-                                        <li><a href="{{asset('/')}}">Zi</a></li>
-                                        <li><a href="{{asset('/')}}">Fr</a></li>
+                                        <li><a href="{{route('index')}}">Zi</a></li>
+                                        <li><a href="{{route('index')}}">Fr</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -120,7 +121,7 @@
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="logo">
-                            <a href="{{asset('/')}}">
+                            <a href="{{route('index')}}">
                                 <img src="{{asset('assets/img/logo.png')}}" alt="">
                             </a>
                         </div>
@@ -129,11 +130,11 @@
                         <div class="nav-menu">
                             <nav class="mainmenu">
                                 <ul>
-                                    <li><a href="{{asset('/')}}">Home</a></li>
-                                    <li><a href="{{asset('/rooms')}}">Rooms</a></li>
-                                    <li><a href="{{asset('/blog')}}">News</a></li>
-                                    <li><a href="{{asset('/about-us')}}">About Us</a></li>
-                                    <li><a href="{{asset('/contact')}}">Contact</a></li>
+                                    <li><a href="{{route('index')}}">Home</a></li>
+                                    <li><a href="{{route('rooms')}}">Rooms</a></li>
+                                    <li><a href="{{route('blog')}}">News</a></li>
+                                    <li><a href="{{route('about')}}">About Us</a></li>
+                                    <li><a href="{{route('contact')}}">Contact</a></li>
                                 </ul>
                             </nav>
                             <div class="nav-right search-switch">
@@ -160,17 +161,17 @@
                     <div class="col-lg-4">
                         <div class="ft-about">
                             <div class="logo">
-                                <a href="{{asset('/')}}">
+                                <a href="{{route('index')}}">
                                     <img src="{{asset('assets/img/footer-logo.png')}}" alt="">
                                 </a>
                             </div>
                             <p>We inspire and reach millions of travelers<br /> across 90 local websites</p>
                             <div class="fa-social">
-                                <a href="{{asset('/')}}"><i class="fa fa-facebook"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-twitter"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-instagram"></i></a>
-                                <a href="{{asset('/')}}"><i class="fa fa-youtube-play"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-facebook"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-twitter"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-instagram"></i></a>
+                                <a href="{{route('index')}}"><i class="fa fa-youtube-play"></i></a>
                             </div>
                         </div>
                     </div>
@@ -202,10 +203,10 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <ul>
-                            <li><a href="{{asset('/')}}">Contact</a></li>
-                            <li><a href="{{asset('/')}}">Terms of use</a></li>
-                            <li><a href="{{asset('/')}}">Privacy</a></li>
-                            <li><a href="{{asset('/')}}">Environmental Policy</a></li>
+                            <li><a href="{{route('index')}}">Contact</a></li>
+                            <li><a href="{{route('index')}}">Terms of use</a></li>
+                            <li><a href="{{route('index')}}">Privacy</a></li>
+                            <li><a href="{{route('index')}}">Environmental Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-5">
@@ -239,6 +240,7 @@
     <script src="{{asset('assets/js/jquery.slicknav.js')}}"></script>
     <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('assets/js/main.js')}}"></script>
+    @stack('scripts')
 </body>
 
 </html> 

@@ -10,7 +10,7 @@
                     <div class="breadcrumb-text">
                         <h2>Our Rooms</h2>
                         <div class="bt-option">
-                            <a href="{{asset('/room-details')}}">Room Details</a>
+                            <a href="{{route('room-details')}}">Room Details</a>
                             <span>Rooms</span>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -200,15 +200,15 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="room-pagination">
-                        <a href="{{asset('/')}}">1</a>
-                        <a href="{{asset('/')}}">2</a>
-                        <a href="{{asset('/')}}">Next <i class="fa fa-long-arrow-right"></i></a>
+                        <a href="{{route('index')}}">1</a>
+                        <a href="{{route('index')}}">2</a>
+                        <a href="{{route('index')}}">Next <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

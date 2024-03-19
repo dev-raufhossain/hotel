@@ -48,7 +48,7 @@
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 					<div class="text-right p-t-8 p-b-31">
-						<a href="#">
+						<a href="{{route('index')}}">
 							Forgot password?
 						</a>
 					</div>
@@ -62,19 +62,19 @@
 					</div>
 					<div class="txt1 text-center p-t-54 p-b-20">
 						<h3>
-							<a href="{{asset('/register')}}" style="font-size: 20px; color:blueviolet;">Or Creat Account</a>
+							<a href="{{asset('register')}}" style="font-size: 20px; color:blueviolet;">Or Creat Account</a>
 						</h3>
 					</div>
 					<div class="flex-c-m">
-						<a href="#" class="login100-social-item bg1">
+						<a href="{{route('index')}}" class="login100-social-item bg1">
 							<i class="fa fa-facebook"></i>
 						</a>
 
-						<a href="#" class="login100-social-item bg2">
+						<a href="{{route('index')}}" class="login100-social-item bg2">
 							<i class="fa fa-twitter"></i>
 						</a>
 
-						<a href="#" class="login100-social-item bg3">
+						<a href="{{route('index')}}" class="login100-social-item bg3">
 							<i class="fa fa-google"></i>
 						</a>
 					</div>

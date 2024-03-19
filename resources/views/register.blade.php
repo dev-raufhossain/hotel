@@ -98,7 +98,7 @@
                                 <div class="p-t-15">
                                     <div class="txt1 text-center p-b-20">
                                         <h3>
-                                            <a href="{{asset('/login')}}" style="font-size: 20px; color:blueviolet; text-decoration: underline;">Or Login</a>
+                                            <a href="{{route('login')}}" style="font-size: 20px; color:blueviolet; text-decoration: underline;">Or Login</a>
                                         </h3>
                                     </div>
                                 </div>

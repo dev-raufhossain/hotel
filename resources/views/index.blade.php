@@ -10,7 +10,7 @@
                         <h1>Sona A Luxury Hotel</h1>
                         <p>Here are the best hotel booking sites, including recommendations for international
                             travel and for finding low-priced hotel rooms.</p>
-                        <a href="{{asset('/')}}" class="primary-btn">Discover Now</a>
+                        <a href="{{route('index')}}" class="primary-btn">Discover Now</a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
@@ -71,7 +71,7 @@
                             languages.</p>
                         <p class="s-para">So when it comes to booking the perfect hotel, vacation rental, resort,
                             apartment, guest house, or tree house, we’ve got you covered.</p>
-                        <a href="{{asset('/about-us')}}" class="primary-btn about-btn">Read More</a>
+                        <a href="{{route('about')}}" class="primary-btn about-btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -186,7 +186,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                                <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                                <a href="{{asset('room-details')}}" class="primary-btn">More Details</a>
                             </div>
                         </div>
                     </div>
@@ -244,7 +244,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                                <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                             </div>
                         </div>
                     </div>
@@ -273,7 +273,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <a href="{{asset('/room-details')}}" class="primary-btn">More Details</a>
+                                <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
                             </div>
                         </div>
                     </div>
@@ -354,7 +354,7 @@
                     <div class="blog-item set-bg" data-setbg="{{asset('assets/img/blog/blog-1.jpg')}}">
                         <div class="bi-text">
                             <span class="b-tag">Travel Trip</span>
-                            <h4><a href="{{asset('/')}}">Tremblant In Canada</a></h4>
+                            <h4><a href="{{route('index')}}">Tremblant In Canada</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 15th April, 2019</div>
                         </div>
                     </div>
@@ -363,7 +363,7 @@
                     <div class="blog-item set-bg" data-setbg="{{asset('assets/img/blog/blog-2.jpg')}}">
                         <div class="bi-text">
                             <span class="b-tag">Camping</span>
-                            <h4><a href="{{asset('/')}}">Choosing A Static Caravan</a></h4>
+                            <h4><a href="{{route('index')}}">Choosing A Static Caravan</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 15th April, 2019</div>
                         </div>
                     </div>
@@ -372,7 +372,7 @@
                     <div class="blog-item set-bg" data-setbg="{{asset('assets/img/blog/blog-3.jpg')}}">
                         <div class="bi-text">
                             <span class="b-tag">Event</span>
-                            <h4><a href="{{asset('/')}}">Copper Canyon</a></h4>
+                            <h4><a href="{{route('index')}}">Copper Canyon</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 21th April, 2019</div>
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                     <div class="blog-item small-size set-bg" data-setbg="{{asset('assets/img/blog/blog-wide.jpg')}}">
                         <div class="bi-text">
                             <span class="b-tag">Event</span>
-                            <h4><a href="{{asset('/')}}">Trip To Iqaluit In Nunavut A Canadian Arctic City</a></h4>
+                            <h4><a href="{{route('index')}}">Trip To Iqaluit In Nunavut A Canadian Arctic City</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 08th April, 2019</div>
                         </div>
                     </div>
@@ -390,7 +390,7 @@
                     <div class="blog-item small-size set-bg" data-setbg="{{asset('assets/img/blog/blog-10.jpg')}}">
                         <div class="bi-text">
                             <span class="b-tag">Travel</span>
-                            <h4><a href="{{asset('/')}}">Traveling To Barcelona</a></h4>
+                            <h4><a href="{{route('index')}}">Traveling To Barcelona</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 12th April, 2019</div>
                         </div>
                     </div>

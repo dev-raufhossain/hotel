@@ -10,7 +10,7 @@
                     <div class="breadcrumb-text">
                         <h2>Our Rooms</h2>
                         <div class="bt-option">
-                            <a href="{{asset('/rooms')}}">Rooms</a>
+                            <a href="{{route('rooms')}}">Rooms</a>
                             <span>Room Details</span>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                         <i class="icon_star"></i>
                                         <i class="icon_star-half_alt"></i>
                                     </div>
-                                    <a href="{{asset('/login')}}">Booking Now</a>
+                                    <a href="{{route('login')}}">Booking Now</a>
                                 </div>
                             </div>
                             <h2>159$<span>/Pernight</span></h2>
