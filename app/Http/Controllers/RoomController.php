@@ -10,11 +10,11 @@ class RoomController extends Controller
 {
     public function index()
     {
-        return view('rooms');
+        return view('frontend.rooms');
     }
 
     public function roomDetails()
     {
-        return view('room-details');
+        return view('frontend.room-details');
     }
 }

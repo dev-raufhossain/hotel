@@ -10,13 +10,13 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('login');
+        return view('frontend.auth.login');
     }
 
 
     public function register()
     {
-        return view('register');
+        return view('frontend.auth.register');
     }
 
 

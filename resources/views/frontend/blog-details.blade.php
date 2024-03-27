@@ -1,9 +1,12 @@
-@extends('layout.master')
+@extends('layouts.master')
+@section('title')
+    Blog Details
+@endsection
 @section('content')
     <!-- Header End -->
 
     <!-- Blog Details Hero Section Begin -->
-    <section class="blog-details-hero set-bg" data-setbg="{{asset('/assets/img/blog/blog-details/blog-details-hero.jpg')}}">
+    <section class="blog-details-hero set-bg" data-setbg="{{ asset('/assets/img/blog/blog-details/blog-details-hero.jpg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
@@ -46,13 +49,13 @@
                         </div>
                         <div class="bd-pic">
                             <div class="bp-item">
-                                <img src="{{asset('/assets/img/blog/blog-details/blog-details-1.jpg')}}" alt="">
+                                <img src="{{ asset('/assets/img/blog/blog-details/blog-details-1.jpg') }}" alt="">
                             </div>
                             <div class="bp-item">
-                                <img src="{{asset('/assets/img/blog/blog-details/blog-details-2.jpg')}}" alt="">
+                                <img src="{{ asset('/assets/img/blog/blog-details/blog-details-2.jpg') }}" alt="">
                             </div>
                             <div class="bp-item">
-                                <img src="{{asset('/assets/img/blog/blog-details/blog-details-3.jpg')}}" alt="">
+                                <img src="{{ asset('/assets/img/blog/blog-details/blog-details-3.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="bd-more-text">
@@ -76,24 +79,25 @@
                         </div>
                         <div class="tag-share">
                             <div class="tags">
-                                <a href="{{route('index')}}">Travel Trip</a>
-                                <a href="{{route('index')}}">Camping</a>
-                                <a href="{{route('index')}}">Event</a>
+                                <a href="{{ route('index') }}">Travel Trip</a>
+                                <a href="{{ route('index') }}">Camping</a>
+                                <a href="{{ route('index') }}">Event</a>
                             </div>
                             <div class="social-share">
                                 <span>Share:</span>
-                                <a href="{{route('index')}}"><i class="fa fa-facebook"></i></a>
-                                <a href="{{route('index')}}"><i class="fa fa-twitter"></i></a>
-                                <a href="{{route('index')}}"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="{{route('index')}}"><i class="fa fa-instagram"></i></a>
-                                <a href="{{route('index')}}"><i class="fa fa-youtube-play"></i></a>
+                                <a href="{{ route('index') }}"><i class="fa fa-facebook"></i></a>
+                                <a href="{{ route('index') }}"><i class="fa fa-twitter"></i></a>
+                                <a href="{{ route('index') }}"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="{{ route('index') }}"><i class="fa fa-instagram"></i></a>
+                                <a href="{{ route('index') }}"><i class="fa fa-youtube-play"></i></a>
                             </div>
                         </div>
                         <div class="comment-option">
                             <h4>2 Comments</h4>
                             <div class="single-comment-item first-comment">
                                 <div class="sc-author">
-                                    <img src="{{asset('/assets/img/blog/blog-details/avatar/avatar-1.jpg')}}" alt="">
+                                    <img src="{{ asset('/assets/img/blog/blog-details/avatar/avatar-1.jpg') }}"
+                                        alt="">
                                 </div>
                                 <div class="sc-text">
                                     <span>27 Aug 2019</span>
@@ -101,13 +105,14 @@
                                     <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
                                         adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et
                                         dolore magnam.</p>
-                                    <a href="#{{route('index')}}" class="comment-btn">Like</a>
-                                    <a href="#{{route('index')}}" class="comment-btn">Reply</a>
+                                    <a href="#{{ route('index') }}" class="comment-btn">Like</a>
+                                    <a href="#{{ route('index') }}" class="comment-btn">Reply</a>
                                 </div>
                             </div>
                             <div class="single-comment-item reply-comment">
                                 <div class="sc-author">
-                                    <img src="{{asset('/assets/img/blog/blog-details/avatar/avatar-2.jpg')}}" alt="">
+                                    <img src="{{ asset('/assets/img/blog/blog-details/avatar/avatar-2.jpg') }}"
+                                        alt="">
                                 </div>
                                 <div class="sc-text">
                                     <span>27 Aug 2019</span>
@@ -115,13 +120,14 @@
                                     <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
                                         adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et
                                         dolore magnam.</p>
-                                    <a href="{{route('index')}}" class="comment-btn like-btn">Like</a>
-                                    <a href="{{route('index')}}" class="comment-btn reply-btn">Reply</a>
+                                    <a href="{{ route('index') }}" class="comment-btn like-btn">Like</a>
+                                    <a href="{{ route('index') }}" class="comment-btn reply-btn">Reply</a>
                                 </div>
                             </div>
                             <div class="single-comment-item second-comment ">
                                 <div class="sc-author">
-                                    <img src="{{asset('/assets/img/blog/blog-details/avatar/avatar-3.jpg')}}" alt="">
+                                    <img src="{{ asset('/assets/img/blog/blog-details/avatar/avatar-3.jpg') }}"
+                                        alt="">
                                 </div>
                                 <div class="sc-text">
                                     <span>27 Aug 2019</span>
@@ -129,8 +135,8 @@
                                     <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
                                         adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et
                                         dolore magnam.</p>
-                                    <a href="{{route('index')}}" class="comment-btn">Like</a>
-                                    <a href="{{route('index')}}" class="comment-btn">Reply</a>
+                                    <a href="{{ route('index') }}" class="comment-btn">Like</a>
+                                    <a href="{{ route('index') }}" class="comment-btn">Reply</a>
                                 </div>
                             </div>
                         </div>
@@ -171,28 +177,28 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="blog-item set-bg" data-setbg="{{asset('assets/img/blog/blog-1.jpg')}}">
+                    <div class="blog-item set-bg" data-setbg="{{ asset('assets/img/blog/blog-1.jpg') }}">
                         <div class="bi-text">
                             <span class="b-tag">Travel Trip</span>
-                            <h4><a href="{{route('index')}}">Tremblant In Canada</a></h4>
+                            <h4><a href="{{ route('index') }}">Tremblant In Canada</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 15th April, 2019</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="blog-item set-bg" data-setbg="{{asset('assets/img/blog/blog-2.jpg')}}">
+                    <div class="blog-item set-bg" data-setbg="{{ asset('assets/img/blog/blog-2.jpg') }}">
                         <div class="bi-text">
                             <span class="b-tag">Camping</span>
-                            <h4><a href="{{route('index')}}">Choosing A Static Caravan</a></h4>
+                            <h4><a href="{{ route('index') }}">Choosing A Static Caravan</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 15th April, 2019</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="blog-item set-bg" data-setbg="{{asset('assets/img/blog/blog-3.jpg')}}">
+                    <div class="blog-item set-bg" data-setbg="{{ asset('assets/img/blog/blog-3.jpg') }}">
                         <div class="bi-text">
                             <span class="b-tag">Event</span>
-                            <h4><a href="{{route('index')}}">Copper Canyon</a></h4>
+                            <h4><a href="{{ route('index') }}">Copper Canyon</a></h4>
                             <div class="b-time"><i class="icon_clock_alt"></i> 21th April, 2019</div>
                         </div>
                     </div>
@@ -203,4 +209,4 @@
     <!-- Recommend Blog Section End -->
 
     <!-- Footer Section Begin -->
-    @endsection
+@endsection

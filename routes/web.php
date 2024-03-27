@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\RoomController;
@@ -28,7 +27,7 @@ use App\Http\Controllers\RegisterController;
     return view('welcome');
 }); */
 
-Route::get('/register', [LoginController::class, 'register'])->name('login.register');
+Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/about', [AboutController::class, 'about'])->name('about');
@@ -39,7 +38,9 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog-details', [BlogControllerr::class, 'blogDetails'])->name('blog-details');
 
 
+Route::get('/register', [RegisterController::class, 'register'])->name('register');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+
 

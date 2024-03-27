@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -10,19 +10,23 @@
     <meta name="keywords" content="Colorlib Templates">
     <!-- Title Page-->
     <title>User Register</title>
-    <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="{{asset('assets/img/icons/favicon.ico')}}"/>
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/icons/favicon.ico') }}" />
     <!-- Icons font CSS-->
-    <link href="{{asset('assets/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('assets/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('assets/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"
+        media="all">
+    <link href="{{ asset('assets/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
     <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
     <!-- Vendor CSS-->
-    <link href="{{asset('assets/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('assets/vendor/datepicker/daterangepicker.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('assets/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('assets/vendor/datepicker/daterangepicker.css') }}" rel="stylesheet" media="all">
     <!-- Main CSS-->
-    <link href="{{asset('assets/css/main.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet" media="all">
 </head>
+
 <body>
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
@@ -98,7 +102,9 @@
                                 <div class="p-t-15">
                                     <div class="txt1 text-center p-b-20">
                                         <h3>
-                                            <a href="{{route('login')}}" style="font-size: 20px; color:blueviolet; text-decoration: underline;">Or Login</a>
+                                            <a href="{{ route('login') }}"
+                                                style="font-size: 20px; color:blueviolet; text-decoration: underline;">Or
+                                                Login</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -109,14 +115,15 @@
             </div>
         </div>
     </div>
-   
+
     <!-- Jquery JS-->
-    <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
     <!-- Vendor JS-->
-    <script src="{{asset('assets/vendor/select2/select2.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/datepicker/moment.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/datepicker/daterangepicker.js')}}"></script>
+    <script src="{{ asset('assets/vendor/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/datepicker/moment.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/datepicker/daterangepicker.js') }}"></script>
     <!-- Main JS-->
-    <script src="{{asset('assets/js/global.js')}}"></script>
+    <script src="{{ asset('assets/js/global.js') }}"></script>
 </body>
+
 </html>

@@ -1,4 +1,7 @@
-@extends('layout.master')
+@extends('layouts.master')
+@section('title')
+    Room Details
+@endsection
 @section('content')
     <!-- Header End -->
 
@@ -10,7 +13,7 @@
                     <div class="breadcrumb-text">
                         <h2>Our Rooms</h2>
                         <div class="bt-option">
-                            <a href="{{route('rooms')}}">Rooms</a>
+                            <a href="{{ route('rooms') }}">Rooms</a>
                             <span>Room Details</span>
                         </div>
                     </div>
@@ -26,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="room-details-item">
-                        <img src="{{asset('assets/img/room/room-details.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-details.jpg') }}" alt="">
                         <div class="rd-text">
                             <div class="rd-title">
                                 <h3>Premium King Room</h3>
@@ -38,7 +41,7 @@
                                         <i class="icon_star"></i>
                                         <i class="icon_star-half_alt"></i>
                                     </div>
-                                    <a href="{{route('login')}}">Booking Now</a>
+                                    <a href="{{ route('login') }}">Booking Now</a>
                                 </div>
                             </div>
                             <h2>159$<span>/Pernight</span></h2>
@@ -80,7 +83,7 @@
                         <h4>Reviews</h4>
                         <div class="review-item">
                             <div class="ri-pic">
-                                <img src="{{asset('assets/img/room/avatar/avatar-1.jpg')}}" alt="">
+                                <img src="{{ asset('assets/img/room/avatar/avatar-1.jpg') }}" alt="">
                             </div>
                             <div class="ri-text">
                                 <span>27 Aug 2019</span>
@@ -99,7 +102,7 @@
                         </div>
                         <div class="review-item">
                             <div class="ri-pic">
-                                <img src="{{asset('assets/img/room/avatar/avatar-2.jpg')}}" alt="">
+                                <img src="{{ asset('assets/img/room/avatar/avatar-2.jpg') }}" alt="">
                             </div>
                             <div class="ri-text">
                                 <span>27 Aug 2019</span>
@@ -181,4 +184,4 @@
     <!-- Room Details Section End -->
 
     <!-- Footer Section Begin -->
-    @endsection
+@endsection

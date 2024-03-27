@@ -7,10 +7,10 @@ use App\Http\Controllers\Controller;
 
 class AboutController extends Controller
 {
-    
+
     public function about()
     {
-        return view('about-us');
+        return view('frontend.about-us');
     }
-   
+
 }

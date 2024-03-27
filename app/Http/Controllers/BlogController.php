@@ -9,12 +9,12 @@ class BlogController extends Controller
 {
     public function index()
     {
-        return view('blog');
+        return view('frontend.blog');
     }
 
     public function blogDetails()
     {
-        return view('blog-details');
+        return view('frontend.blog-details');
     }
 
 }

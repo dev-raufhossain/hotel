@@ -1,4 +1,7 @@
-@extends('layout.master')
+@extends('layouts.master')
+@section('title')
+    Rooms
+@endsection
 @section('content')
     <!-- Header End -->
 
@@ -10,7 +13,7 @@
                     <div class="breadcrumb-text">
                         <h2>Our Rooms</h2>
                         <div class="bt-option">
-                            <a href="{{route('room-details')}}">Room Details</a>
+                            <a href="{{ route('room-details') }}">Room Details</a>
                             <span>Rooms</span>
                         </div>
                     </div>
@@ -26,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{asset('assets/img/room/room-1.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-1.jpg') }}" alt="">
                         <div class="ri-text">
                             <h4>Premium King Room</h4>
                             <h3>159$<span>/Pernight</span></h3>
@@ -50,13 +53,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{ route('room-details') }}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{asset('assets/img/room/room-2.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-2.jpg') }}" alt="">
                         <div class="ri-text">
                             <h4>Deluxe Room</h4>
                             <h3>159$<span>/Pernight</span></h3>
@@ -80,13 +83,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{ route('room-details') }}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{asset('assets/img/room/room-3.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-3.jpg') }}" alt="">
                         <div class="ri-text">
                             <h4>Double Room</h4>
                             <h3>159$<span>/Pernight</span></h3>
@@ -110,13 +113,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{ route('room-details') }}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{asset('assets/img/room/room-4.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-4.jpg') }}" alt="">
                         <div class="ri-text">
                             <h4>Luxury Room</h4>
                             <h3>159$<span>/Pernight</span></h3>
@@ -140,13 +143,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{ route('room-details') }}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{asset('assets/img/room/room-5.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-5.jpg') }}" alt="">
                         <div class="ri-text">
                             <h4>Room With View</h4>
                             <h3>159$<span>/Pernight</span></h3>
@@ -170,13 +173,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{ route('room-details') }}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="room-item">
-                        <img src="{{asset('assets/img/room/room-6.jpg')}}" alt="">
+                        <img src="{{ asset('assets/img/room/room-6.jpg') }}" alt="">
                         <div class="ri-text">
                             <h4>Small View</h4>
                             <h3>159$<span>/Pernight</span></h3>
@@ -200,15 +203,15 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="{{route('room-details')}}" class="primary-btn">More Details</a>
+                            <a href="{{ route('room-details') }}" class="primary-btn">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="room-pagination">
-                        <a href="{{route('index')}}">1</a>
-                        <a href="{{route('index')}}">2</a>
-                        <a href="{{route('index')}}">Next <i class="fa fa-long-arrow-right"></i></a>
+                        <a href="{{ route('index') }}">1</a>
+                        <a href="{{ route('index') }}">2</a>
+                        <a href="{{ route('index') }}">Next <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -217,4 +220,4 @@
     <!-- Rooms Section End -->
 
     <!-- Footer Section Begin -->
-    @endsection
+@endsection

@@ -1,4 +1,7 @@
-@extends('layout.master')
+@extends('layouts.master')
+@section('title')
+    About Us
+@endsection
 @section('content')
     <!-- Header End -->
 
@@ -10,7 +13,7 @@
                     <div class="breadcrumb-text">
                         <h2>About Us</h2>
                         <div class="bt-option">
-                            <a href="{{route('index')}}">Home</a>
+                            <a href="{{ route('index') }}">Home</a>
                             <span>About Us</span>
                         </div>
                     </div>
@@ -47,21 +50,21 @@
             <div class="about-page-services">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="ap-service-item set-bg" data-setbg="{{asset('assets/img/about/about-p1.jpg')}}">
+                        <div class="ap-service-item set-bg" data-setbg="{{ asset('assets/img/about/about-p1.jpg') }}">
                             <div class="api-text">
                                 <h3>Restaurants Services</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="ap-service-item set-bg" data-setbg="{{asset('assets/img/about/about-p2.jpg')}}">
+                        <div class="ap-service-item set-bg" data-setbg="{{ asset('assets/img/about/about-p2.jpg') }}">
                             <div class="api-text">
                                 <h3>Travel & Camping</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="ap-service-item set-bg" data-setbg="{{asset('assets/img/about/about-p3.jpg')}}">
+                        <div class="ap-service-item set-bg" data-setbg="{{ asset('assets/img/about/about-p3.jpg') }}">
                             <div class="api-text">
                                 <h3>Event & Party</h3>
                             </div>
@@ -74,15 +77,15 @@
     <!-- About Us Page Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="{{asset('assets/img/video-bg.jpg')}}">
+    <section class="video-section set-bg" data-setbg="{{ asset('assets/img/video-bg.jpg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="video-text">
                         <h2>Discover Our Hotel & Services.</h2>
                         <p>It S Hurricane Season But We Are Visiting Hilton Head Island</p>
-                        <a href="{{asset('https://www.youtube.com/watch?v=EzKkl64rRbM')}}" class="play-btn video-popup"><img
-                                src="{{asset('assets/img/play.png')}}" alt=""></a>
+                        <a href="{{ asset('https://www.youtube.com/watch?v=EzKkl64rRbM') }}"
+                            class="play-btn video-popup"><img src="{{ asset('assets/img/play.png') }}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -103,21 +106,21 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="gallery-item set-bg" data-setbg="{{asset('assets/img/gallery/gallery-1.jpg')}}">
+                    <div class="gallery-item set-bg" data-setbg="{{ asset('assets/img/gallery/gallery-1.jpg') }}">
                         <div class="gi-text">
                             <h3>Room Luxury</h3>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="gallery-item set-bg" data-setbg="{{asset('assets/img/gallery/gallery-3.jpg')}}">
+                            <div class="gallery-item set-bg" data-setbg="{{ asset('assets/img/gallery/gallery-3.jpg') }}">
                                 <div class="gi-text">
                                     <h3>Room Luxury</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="gallery-item set-bg" data-setbg="{{asset('assets/img/gallery/gallery-4.jpg')}}">
+                            <div class="gallery-item set-bg" data-setbg="{{ asset('assets/img/gallery/gallery-4.jpg') }}">
                                 <div class="gi-text">
                                     <h3>Room Luxury</h3>
                                 </div>
@@ -126,7 +129,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="gallery-item large-item set-bg" data-setbg="{{asset('assets/img/gallery/gallery-2.jpg')}}">
+                    <div class="gallery-item large-item set-bg"
+                        data-setbg="{{ asset('assets/img/gallery/gallery-2.jpg') }}">
                         <div class="gi-text">
                             <h3>Room Luxury</h3>
                         </div>
@@ -138,4 +142,4 @@
     <!-- Gallery Section End -->
 
     <!-- Footer Section Begin -->
-    @endsection
+@endsection
